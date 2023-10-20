@@ -124,6 +124,7 @@ display: none;
 .menu-links li {
   list-style: none;
 }
+
 .menu-links a:hover {
   background:rgba(50, 50, 50, 0.5);
 }
