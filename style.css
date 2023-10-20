@@ -125,7 +125,7 @@ display: none;
   list-style: none;
 }
 .menu-links a:hover {
-  background:rgba(53, 53, 53, 0.5);
+  background:rgba(50, 50, 50, 0.5);
 }
 
 .menu-links.open {
