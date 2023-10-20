@@ -73,7 +73,7 @@ a:hover {
 /* HAMBURGER MENU */
 
 #hamburger-nav {
-  display: none;
+display: none;
 }
 
 .hamburger-menu {
@@ -106,6 +106,8 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  outline: #463f3a;
+  border-radius: 1em;
 }
 
 .menu-links a {
@@ -116,14 +118,19 @@ a:hover {
   color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
+  border-bottom: rgb(53, 53, 53) 0.04rem solid;
 }
 
 .menu-links li {
   list-style: none;
 }
+.menu-links a:hover {
+  background:rgba(50, 50, 50, 0.5);
+}
 
 .menu-links.open {
   max-height: 300px;
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .hamburger-icon.open span:first-child {
@@ -289,6 +296,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  box-shadow: 10px 5px #463f3a;
 }
 
 .arrow {
@@ -319,20 +327,20 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* SKILLS SECTION */
 
-#experience {
+#skillls {
   position: relative;
 }
 
-.experience-sub-title {
+.skills-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.skills-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
