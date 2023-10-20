@@ -1,0 +1,249 @@
+<!--
+  TODO:
+  add more projects
+  make some animations
+  fix projects section when removing projects
+  Maybe add a logo to replace the "Eric Lu" in the top left
+-->
+<!DOCTYPE html>
+<link href='https://fonts.googleapis.com/css?family=Courier Prime' rel='stylesheet'>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eric's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Eric Lu</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">/about</a></li>
+          <li><a href="#experience">/experience</a></li>
+          <li><a href="#projects">/projects</a></li>
+          <li><a href="#contact">/contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Eric Lu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/me.jpeg" alt="Eric Lu profile picture" class ="about-pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi! I'm</p>
+        <h1 class="title">Eric Lu</h1>
+        <p class="section__text__p2">Student @ Georgia Tech</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open(href = 'https://docs.google.com/document/d/1iIwuCCwxS1gVEIHj4LBFU3sLmYhp0SY8iEG8oT0ucno/edit?usp=sharing')">Resume</button>
+          <button class="btn btn-color-2" onclick="location.href='#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <a href="https://github.com/ericlu327" target="_blank">
+            <img src="./assets/linkedin.png" alt="LinkedIn page" class="icon">
+        </a>        
+          <a href="https://github.com/ericlu327" target="_blank">
+            <img src="./assets/github.png" alt="Github profile" class="icon">
+        </a>        
+        </div>
+      </div>
+    </section>
+    <!-- 
+      This is the About Me section.
+    -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/GT1.jpeg" alt="georgia tech" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon"/>
+              <h3>Education</h3>
+              <p>Pursuing a B.S in Computer Engineering at Georgia Institute of Technology.</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello! I'm Eric Lu, currently immersing myself in the rigorous academic landscape of Georgia Tech. 
+              Here, I've found a unique blend of challenges and opportunities that align with my passion for innovation and continuous learning.
+              This journey has shaped my perspectives and skills in numerous ways. Welcome to my portfolio, 
+              where I proudly showcase the projects and accomplishments that highlight my dedication to excellence in my chosen field.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'"/>
+    </section>
+    <!--
+    This is the experience / skills / coursework section.
+    -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Relevant Coursework</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/dsa.png" alt="dsa" class="icon"/>
+                <div>
+                  <h3>Data Structures & Algorithims</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/oop.png" alt="OOP" class="icon"/>
+                <div>
+                  <h3>Object Orientated Programming</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages & Developer tools</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/java.png" alt="Java icon" class="icon"/>
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/js.png" alt="JavaScript icon" class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/html.png" alt="HTML icon" class="icon"/>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/python.png" alt="Python icon" class="icon"/>
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/CSS.png" alt="CSS icon" class="icon"/>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/Git.png" alt="Git icon" class="icon"/>
+                <div>
+                  <h3>Git</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'"/>
+    </section>
+    <!--
+      Projects section. Will put my future projects here.
+    -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!--
+            This is the first Project
+          -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/website.png" alt="Portfolio Website" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+            </div>
+          </div>
+          <!--
+            This is the placeholder project for more projects to put in later. 
+          -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/placeholder.jpg" alt="PlaceHolder" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">More Coming Soon...</h2>
+            <div class="btn-container">
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'"/>
+    </section>
+    <!--
+      This is the contact me section include's my email and LinkedIn page.
+    -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+          <p><a href="mailto:examplemail@gmail.com">eric.lu32712@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <!--
+      Footer to goto the other sections same as header.
+    -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">/about</a></li>
+            <li><a href="#experience">/experience</a></li>
+            <li><a href="#projects">/projects</a></li>
+            <li><a href="#contact">/contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
