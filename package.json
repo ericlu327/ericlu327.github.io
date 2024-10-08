@@ -52,7 +52,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://ericlu327.github.io/ericlu327.github.io",
+  "homepage": "https://ericlu327.github.io/",
   "devDependencies": {
     "gh-pages": "^6.1.1"
   },
