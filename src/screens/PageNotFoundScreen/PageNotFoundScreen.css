@@ -1,0 +1,79 @@
+.page-not-found-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.not-found-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  z-index: 1;
+}
+
+.not-found-content-container>h1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.not-found-content-container>h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  text-align: center;
+}
+
+.page-not-found-cta-button {
+  border: 1px solid var(--mainWhite);
+  outline: none;
+  background: none;
+  color: var(--mainWhite);
+  margin-top: 40px;
+  padding: 0.75rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: all 0.25s ease; */
+  width: fit-content;
+  text-decoration: none;
+}
+
+.page-not-found-cta-button .cta-icon {
+  width: 18px;
+  margin-left: 0.5rem;
+  fill: var(--mainWhite);
+  /* transition: all 0.25s ease; */
+}
+
+@media screen and (max-width: 650px) {
+  .page-not-found-screen {
+    padding: 0 1rem;
+  }
+
+  .not-found-content-container>h1 {
+    margin-bottom: 1.25rem !important;
+  }
+
+  .not-found-content-container>h3 {
+    font-size: 1.25rem !important;
+  }
+
+  .not-found-content-container>h1 {
+    font-size: 2.5rem;
+  }
+
+  .not-found-content-container>h3 {
+    font-size: 1.5rem;
+  }
+}

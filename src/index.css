@@ -1,0 +1,343 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--darkBackground);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Degular', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Monarcha', sans-serif;
+  font-weight: normal;
+}
+
+html {
+  --darkBackground: #1E1F23;
+  --mainWhite: #fafafa;
+  --navbarHeight: 60px;
+  /* intro section background colors */
+  --color-bg1: rgb(108, 0, 162);
+  --color-bg2: rgb(0, 17, 82);
+  --color1: 18, 113, 255;
+  --color2: 221, 74, 255;
+  --color3: 100, 220, 255;
+  --color4: 200, 50, 50;
+  --color5: 170, 120, 50;
+  --color-interactive: 140, 100, 255;
+  --circle-size: 75%;
+  --blending: hard-light;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(107, 107, 107, 0.25);
+  border-radius: 500px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 107, 107, 0.5);
+}
+
+.noise {
+  position: relative;
+}
+
+.noise::before {
+  content: "";
+  background-image: url('./assets/noise-light.webp');
+  /* background-size: auto; */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.33;
+}
+
+.animated-underline {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  width: 100%;
+  height: 0.075em;
+  background-color: var(--mainWhite);
+  opacity: 0;
+  transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  -webkit-transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.animated-underline:hover::after,
+.animated-underline:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.animated-underline {
+  overflow: hidden;
+}
+
+.animated-underline::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.hori-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.vert-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: rgba(250, 250, 250, 0.075);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(250, 250, 250, 0.15);
+  transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  -webkit-transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+}
+
+.fill-transition-btn {
+  position: relative;
+}
+
+.fill-transition-btn {
+  transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  -webkit-transition: all 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+}
+
+.fill-transition-btn:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  -webkit-transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.fill-transition-btn:after {
+  content: "";
+  position: absolute;
+  background: var(--mainWhite);
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 100%;
+  z-index: -2;
+  transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  -webkit-transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.fill-transition-btn:hover {
+  color: var(--darkBackground) !important;
+  border: 1px var(--mainWhite) solid;
+}
+
+.fill-transition-btn:hover:after {
+  right: 0;
+}
+
+.spinner {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid rgba(250, 250, 250, 0.2);
+  border-top-color: var(--mainWhite);
+  animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+@font-face {
+  font-family: 'Monarcha';
+  src: url('./assets/fonts/Monarcha/Monarcha.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monarcha';
+  src: url('./assets/fonts/Monarcha/Monarcha-Italic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('assets/fonts/Degular/Degular-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}

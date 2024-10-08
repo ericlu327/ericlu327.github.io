@@ -1,0 +1,131 @@
+.skills-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+  padding: calc(1.5*var(--navbarHeight)) 0;
+  pointer-events: none;
+}
+
+.skills-section-title {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  margin: 0 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  z-index: 1;
+  text-align: center;
+}
+
+.skills-section-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.skills-section-content {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills-section-category-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.skills-section-category-title {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: var(--mainWhite);
+  margin: 0;
+  margin-bottom: 1.75rem;
+  z-index: 1;
+  text-align: center;
+  font-family: 'Degular', sans-serif;
+}
+
+.skills-section-category {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-card {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+}
+
+.skill-card-name {
+  font-size: 1rem;
+  color: var(--mainWhite);
+  z-index: 1;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 1080px) {
+  .skills-section-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .skills-section-category-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .skills-section-category-container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .skills-section-title {
+    font-size: 2rem;
+  }
+
+  .skills-section-category-container {
+    padding: 0.5rem;
+  }
+
+  .skill-card {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .skill-card-name {
+    font-size: 0.9rem;
+  }
+
+  .skills-section {
+    padding-bottom: 20px;
+  }
+}
