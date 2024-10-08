@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ericlu327.github.io/static/css/main.21eef731.css",
-    "main.js": "/ericlu327.github.io/static/js/main.72bc0a06.js",
+    "main.css": "/ericlu327.github.io/static/css/main.50f0311d.css",
+    "main.js": "/ericlu327.github.io/static/js/main.681a006d.js",
     "static/media/atlfoodfinder.png": "/ericlu327.github.io/static/media/atlfoodfinder.fc23f869d0de022784c5.png",
     "static/media/Degular-BlackItalic.ttf": "/ericlu327.github.io/static/media/Degular-BlackItalic.2025e724713b47bca838.ttf",
     "static/media/Degular-LightItalic.ttf": "/ericlu327.github.io/static/media/Degular-LightItalic.15b850d5625945454bb3.ttf",
@@ -33,11 +33,11 @@
     "static/media/arrow-right.svg": "/ericlu327.github.io/static/media/arrow-right.bc88b22c1fab0bbba6a71f148d79b035.svg",
     "static/media/slider-left-arrow.svg": "/ericlu327.github.io/static/media/slider-left-arrow.07daa8c15abe0c17c7879df47395a08d.svg",
     "static/media/slider-right-arrow.svg": "/ericlu327.github.io/static/media/slider-right-arrow.0f4033c9422f90e47415efea32f97c65.svg",
-    "main.21eef731.css.map": "/ericlu327.github.io/static/css/main.21eef731.css.map",
-    "main.72bc0a06.js.map": "/ericlu327.github.io/static/js/main.72bc0a06.js.map"
+    "main.50f0311d.css.map": "/ericlu327.github.io/static/css/main.50f0311d.css.map",
+    "main.681a006d.js.map": "/ericlu327.github.io/static/js/main.681a006d.js.map"
   },
   "entrypoints": [
-    "static/css/main.21eef731.css",
-    "static/js/main.72bc0a06.js"
+    "static/css/main.50f0311d.css",
+    "static/js/main.681a006d.js"
   ]
 }
