@@ -11,7 +11,7 @@ const ScreenFooter = () => {
         <CodeIcon />
         <a
           aria-label="View source code"
-          href="https://github.com/ericlu327"
+          href="https://github.com/ericlu327/ericlu327.github.io"
           target="_blank"
           rel="noreferrer"
           className="animated-underline"
