@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.eaac2143.css",
-    "main.js": "/static/js/main.fe14c930.js",
+    "main.js": "/static/js/main.af489473.js",
     "static/media/atlfoodfinder.png": "/static/media/atlfoodfinder.fc23f869d0de022784c5.png",
     "static/media/Degular-BlackItalic.ttf": "/static/media/Degular-BlackItalic.2025e724713b47bca838.ttf",
     "static/media/Degular-LightItalic.ttf": "/static/media/Degular-LightItalic.15b850d5625945454bb3.ttf",
@@ -34,10 +34,10 @@
     "static/media/slider-left-arrow.svg": "/static/media/slider-left-arrow.07daa8c15abe0c17c7879df47395a08d.svg",
     "static/media/slider-right-arrow.svg": "/static/media/slider-right-arrow.0f4033c9422f90e47415efea32f97c65.svg",
     "main.eaac2143.css.map": "/static/css/main.eaac2143.css.map",
-    "main.fe14c930.js.map": "/static/js/main.fe14c930.js.map"
+    "main.af489473.js.map": "/static/js/main.af489473.js.map"
   },
   "entrypoints": [
     "static/css/main.eaac2143.css",
-    "static/js/main.fe14c930.js"
+    "static/js/main.af489473.js"
   ]
 }
