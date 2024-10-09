@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./MobileMenu.css";
 import { HashLink as HLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
@@ -73,7 +72,7 @@ const MobileMenu = () => {
             className="navbar__menu-item"
             onClick={() => {
               window.open(
-                "https://docs.google.com/document/d/1iIwuCCwxS1gVEIHj4LBFU3sLmYhp0SY8iEG8oT0ucno/edit?usp=sharing",
+                process.env.PUBLIC_URL + "/ERIC_RESUME_FINAL.pdf",
                 "_blank"
               );
             }}

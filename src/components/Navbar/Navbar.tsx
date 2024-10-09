@@ -2,9 +2,7 @@ import "./Navbar.css";
 import { ReactComponent as LinkedIn } from "../../assets/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/github.svg";
 import { ReactComponent as Instagram } from "../../assets/instagram.svg";
-import { ReactComponent as Twitter } from "../../assets/twitter.svg";
 import { HashLink as HLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
 import { motion } from "framer-motion";
 
@@ -90,7 +88,7 @@ const Navbar = () => {
           className="navbar__menu-item animated-underline resume"
           onClick={() => {
             window.open(
-              "https://docs.google.com/document/d/1iIwuCCwxS1gVEIHj4LBFU3sLmYhp0SY8iEG8oT0ucno/edit?usp=sharing",
+              process.env.PUBLIC_URL + "/Eric_RESUME_FINAL.pdf",
               "_blank"
             );
           }}

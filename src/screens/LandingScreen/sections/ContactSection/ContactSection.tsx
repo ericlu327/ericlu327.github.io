@@ -4,7 +4,6 @@ import { LandingPageSectionProps } from "../../../../types";
 import { ReactComponent as Mail } from "../../../../assets/mail.svg";
 import { ReactComponent as LinkedIn } from "../../../../assets/linkedin.svg";
 import { ReactComponent as Instagram } from "../../../../assets/instagram.svg";
-import { ReactComponent as Twitter } from "../../../../assets/twitter.svg";
 import { motion } from "framer-motion";
 import ScreenFooter from "../../../../components/ScreenFooter/ScreenFooter";
 
