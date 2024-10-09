@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./MobileMenu.css";
 import { HashLink as HLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
@@ -72,7 +73,7 @@ const MobileMenu = () => {
             className="navbar__menu-item"
             onClick={() => {
               window.open(
-                "/Eric_RESUME_FINAL.pdf",
+                "https://drive.google.com/file/d/1EEEHeqzKgDHGwdV4H1YrRSH32cgSIC0Q/view?usp=sharing",
                 "_blank"
               );
             }}

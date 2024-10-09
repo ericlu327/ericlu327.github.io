@@ -88,7 +88,7 @@ const Navbar = () => {
           className="navbar__menu-item animated-underline resume"
           onClick={() => {
             window.open(
-              "/Eric_RESUME_FINAL.pdf",
+              "https://drive.google.com/file/d/1EEEHeqzKgDHGwdV4H1YrRSH32cgSIC0Q/view?usp=sharing",
               "_blank"
             );
           }}
