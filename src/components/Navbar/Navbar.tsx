@@ -88,7 +88,7 @@ const Navbar = () => {
           className="navbar__menu-item animated-underline resume"
           onClick={() => {
             window.open(
-              process.env.PUBLIC_URL + "/Eric_RESUME_FINAL.pdf",
+              "/Eric_RESUME_FINAL.pdf",
               "_blank"
             );
           }}

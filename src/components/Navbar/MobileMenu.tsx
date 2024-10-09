@@ -72,7 +72,7 @@ const MobileMenu = () => {
             className="navbar__menu-item"
             onClick={() => {
               window.open(
-                process.env.PUBLIC_URL + "/ERIC_RESUME_FINAL.pdf",
+                "/Eric_RESUME_FINAL.pdf",
                 "_blank"
               );
             }}
