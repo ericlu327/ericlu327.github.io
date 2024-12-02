@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import { ReactComponent as LinkedIn } from "../../assets/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/github.svg";
-import { ReactComponent as Instagram } from "../../assets/instagram.svg";
+// import { ReactComponent as Instagram } from "../../assets/instagram.svg";
 import { HashLink as HLink } from "react-router-hash-link";
 import MobileMenu from "./MobileMenu";
 import { motion } from "framer-motion";
