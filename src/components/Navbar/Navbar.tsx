@@ -33,6 +33,7 @@ const Navbar = () => {
         >
           <Github className="navbar__socials-item github" />
         </a>
+        {/*
         <a
           aria-label="Instagram"
           href="https://www.instagram.com/asiianeric/"
@@ -42,6 +43,7 @@ const Navbar = () => {
         >
           <Instagram className="navbar__socials-item instagram" />
         </a>
+        */}
       </div>
       <div className="navbar__menu">
         <HLink
