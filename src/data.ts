@@ -71,7 +71,7 @@ export const ProjectsSectionData: ProjectCarouselCard[] = [
       "CSS",
       "Django",
     ],
-    projectLink: "https://github.com/ericlu327",
+    projectLink: "https://github.com/ericlu327/SpotifyWrapped",
     additionalLinks: [],
   },
 ];

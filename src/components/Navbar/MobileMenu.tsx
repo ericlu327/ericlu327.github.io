@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./MobileMenu.css";
 import { HashLink as HLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
